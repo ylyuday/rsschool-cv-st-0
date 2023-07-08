@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid red;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: beige;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.nav-link {
+    transition: .3s;
+}
+
+.one-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#profile,
+#contact,
+#about,
+#education,
+#workexperience,
+#skills,
+#english,
+#projects,
+#code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    background-color: black;
+    height: 2px;
+}
+
+.img-foto {
+    border-radius: 65px;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.footer-link {
+
+    padding: 0 120px;
+    line-height: 120px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .section {
+        width: 100%;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -75px;
+    }
+
+    #profile,
+    #contact,
+    #about,
+    #education,
+    #workexperience,
+    #skills,
+    #english,
+    #projects,
+    #code {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-link {
+
+        padding: 0 60px;
+        line-height: 120px;
+
+    }
+
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .footer-link {
+        padding: 0 60px;
+        line-height: 120px;
+
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile,
+    #contact,
+    #about,
+    #education,
+    #workexperience,
+    #skills,
+    #english,
+    #projects,
+    #code {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-footer {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
